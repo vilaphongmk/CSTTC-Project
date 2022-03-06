@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AboutAdminController;
+use App\Http\Controllers\User\AboutUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 route::get('/index', [AboutAdminController::class, 'Index'])->name('admin.about.index');
+route::get('/about', [AboutUserController::class, 'About'])->name('user.about.index');
